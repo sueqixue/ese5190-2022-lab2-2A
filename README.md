@@ -34,19 +34,19 @@ Tools | State
 4. Tick the box `Add path to environmnet variable`.
 5. Tick the box `Add registry information`.
 6. Choose to install GNU on `C:\`.  
-<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/2.2.1.png" alt="GNU" width="400"/>
+<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/Images/2.2.1.png" alt="GNU" width="400"/>
 
 ##### 2.2.2 Installing CMake
 1. Run the CMake executable installer.  
 2. Tick the circle `Add CMake to the system PATH for all users`.
-<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/2.2.2.png" alt="CMake" width="400"/>
+<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/Images/2.2.2.png" alt="CMake" width="400"/>
 
 
 ##### 2.2.3 Installing Build Tools for Visual Studio 2022
 1. Run the Build Tools executable installer.  
 2. Tick the box `Desktop development with C++`.
 3. Remember install the C++ build tools only.
-<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/2.2.3.png" alt="Build_tools" width="600"/>
+<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/Images/2.2.3.png" alt="Build_tools" width="600"/>
 
 ### 3. Getthing the SDK and examples
 
@@ -83,7 +83,7 @@ C:\Users\xue_q\Downloads\lab2\pico-examples\build> nmake
 ```
 
 The command line should look like this if build successfully:
-<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/4.2.jpg" alt="Build_right" width="600"/>
+<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/Images/4.2.jpg" alt="Build_right" width="600"/>
 
 ### 5. Run "Hello World" on the RP2040
 
@@ -91,12 +91,12 @@ The command line should look like this if build successfully:
 1. Plug only RP2040 using a micro-USB cable in without the sensor, hold down the `BOOTSEL` button to force it into USB Mass Storage Mode. 
 2. Open **Device Manager** by searching for it in the Windows search box.
 3. **Important:** Check the port hte RP2040 uses. In my case, it is COM6, which is differnet from the port RP2040 used during Lab1[^2]:
-<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/5.1.jpg" alt="PuTTy_setting" width="600"/>
+<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/Images/5.1.jpg" alt="PuTTy_setting" width="600"/>
 
 #### 5.2 Run "Hello World"
 Copy the C:\Users\xue_q\Downloads\lab2\pico-examples\build\hello_world\usb\hello-usb.uf2 file and paste it to the RP2040.  
 Then, open the serial console and the code is running as follow:
-<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/5.2.jpg" alt="Run_right" width="600"/>
+<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/Images/5.2.jpg" alt="Run_right" width="600"/>
 
 ### 6. Quirks and Tips
 [^1]: If the path of your build directory contains characters that CMake cannot recognize, such as Chinese characters, `cmake` in the following steps will fail. Thus, make sure no such characters involving the log.
