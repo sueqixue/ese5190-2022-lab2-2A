@@ -91,7 +91,7 @@ The command line should look like this if build successfully:
 1. Plug only RP2040 using a micro-USB cable in without the sensor, hold down the `BOOTSEL` button to force it into USB Mass Storage Mode. 
 2. Open **Device Manager** by searching for it in the Windows search box.
 3. **Important:** Check the port hte RP2040 uses. In my case, it is COM6, which is differnet from the port RP2040 used during Lab1[^3]:
-<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/Images/5.1.jpg" alt="PuTTy_setting" width="600"/>
+<img src="https://github.com/sueqixue/ese5190-2022-lab2-2A/blob/main/Images/5.1.jpg" alt="PuTTy_setting" width="400"/>
 
 #### 5.2 Run "Hello World"
 Copy the C:\Users\xue_q\Downloads\lab2\pico-examples\build\hello_world\usb\hello-usb.uf2 file and paste it to the RP2040.  
