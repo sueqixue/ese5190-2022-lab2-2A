@@ -65,10 +65,10 @@ C:\Users\xue_q\Downloads\lab2> git clone -b master https://github.com/raspberryp
 ### 4. Building "Hello World" from the Command Line
 
 #### 4.1 Set the Path to the SDK
-Open the **Developer Command Prompt for VS 2022** by searching for it in the Windows search box and set the path to the SDK as follow:
+Open the **Developer Command Prompt for VS 2022** by searching for it in the Windows search box and set the path to the SDK as follow[^2]:
 
 ```
-C:\Users\xue_q\Downloads\lab2> setx PICO_SDK_PATH "C:\Users\xue_q\Downloads\lab2\pico-sdk" [^2]
+C:\Users\xue_q\Downloads\lab2> setx PICO_SDK_PATH "C:\Users\xue_q\Downloads\lab2\pico-sdk"
 ```
 
 #### 4.2 Set the Environment Variables
