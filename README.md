@@ -160,3 +160,7 @@ example. Some questions to guide your reading:
 #### How might you approach this
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d4a019d94cda05b08cd6527c79a7949ba83eb69e
