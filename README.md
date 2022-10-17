@@ -65,10 +65,10 @@ C:\Users\xue_q\Downloads\lab2> git clone -b master https://github.com/raspberryp
 ### 4. Building "Hello World" from the Command Line
 
 #### 4.1 Set the Path to the SDK
-Open the **Developer Command Prompt for VS 2022** by searching for it in the Windows search box and set the path to the SDK as follow:
+Open the **Developer Command Prompt for VS 2022** by searching for it in the Windows search box and set the path to the SDK as follow[2]:
 
 ```
-C:\Users\xue_q\Downloads\lab2> setx PICO_SDK_PATH "..\..\pico-sdk" 
+C:\Users\xue_q\Downloads\lab2> setx PICO_SDK_PATH "C:\Users\xue_q\Downloads\lab2\pico-sdk" 
 ```
 
 #### 4.2 Set the Environment Variables
@@ -90,7 +90,7 @@ The command line should look like this if build successfully:
 #### 5.1 Plug in RP2040 and Check Ports
 1. Plug only RP2040 using a micro-USB cable in without the sensor, hold down the `BOOTSEL` button to force it into USB Mass Storage Mode. 
 2. Open **Device Manager** by searching for it in the Windows search box.
-3. **Important:** Check the port hte RP2040 uses. In my case, it is COM6, which is differnet from the port RP2040 used during Lab1[^2]:
+3. **Important:** Check the port hte RP2040 uses. In my case, it is COM6, which is differnet from the port RP2040 used during Lab1[3]:
 <img src="./Images/2.5.1.jpg" alt="PuTTy_setting" width="600"/>
 
 #### 5.2 Run "Hello World"
@@ -99,8 +99,11 @@ Then, open the serial console and the code is running as follow:
 <img src="./Images/2.5.2.jpg" alt="Run_right" width="600"/>
 
 ### 6. Quirks and Tips
-[^1]: If the path of your build directory contains characters that CMake cannot recognize, such as Chinese characters, `cmake` in the following steps will fail. Thus, make sure no such characters involving the log.
-[^2]: I first directly used my saved puTTy configuration and the serial console cannot connected to the device successfully. I did not know that the port occupied by the same external drive can change so I wasted some time on this. Thus, double check the port before open the serial console.
+[1]: If the path of your build directory contains characters that CMake cannot recognize, such as Chinese characters, `cmake` in the following steps will fail. Thus, make sure no such characters involving the log.
+
+[2]: Make sure the path is the absolute path, or it might cause problems when using CMake in part 4.
+
+[3]: I first directly used my saved puTTy configuration and the serial console cannot connected to the device successfully. I did not know that the port occupied by the same external drive can change so I wasted some time on this. Thus, double check the port before open the serial console.
 
 ## PartIII - Talking LED
 
@@ -157,10 +160,4 @@ example. Some questions to guide your reading:
 ### Reflection
 #### What were some strengths/weaknesses of working with paper?
 #### What were some strengths/weaknesses of working with spreadsheets?
-#### How might you approach this
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> d4a019d94cda05b08cd6527c79a7949ba83eb69e
+#### How might you approach this?
